@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tarea formularios</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h2>Información sobre el producto </h2>
+    <form>
+        <fieldset>
+            <legend>Datos básicos</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" value="" size="47"/>
+            <br/>
+            <br/>
+            <label for="description">Descipción</label>
+            <br/>
+            <textarea id="description" name="descipcion" cols="55" rows="6"></textarea>
+            <br/>
+            <br/>
+            <label for="foto">Foto</label>
+            <input type="file" id="foto" name="foto" value="texto"/>
+            <br/>
+            <br/>
+            <input name="contadorVisitas" id="contador" type="checkbox" value="contadorVisitas"/>
+            <label for="contador">Añadir contador de visitas</label>
+        </fieldset>
+        <fieldset>
+        	<legend>Datos económicos</legend>
+        	<label for="Precio">Precio</label>
+            <input type="text" id="Precio" name="Precio" value="" size="10"/>
+            <label>&#8364;</label> 
+            <label for="imp">Impuestos</label>
+			<select id="imp" name="impuesto">
+  				<option value="4" selected="selected">4%</option>
+  				<option value="7">7%</option>
+ 				<option value="16">16%</option>
+ 				<option value="25">25%</option>
+ 			</select>
+ 			<br/>
+ 			<br/>
+ 			<label for="prom">Promoción</label>
+ 				<br/>
+ 				<input name="ninguno" type="radio" id="prom" value="ninguno"/>
+					<label>Ninguno</label>
+				<br/>
+				<input name="transpGratuito" type="radio" id="prom" value="transporteGratuito" /> 
+					<label>Transporte Gratuito</label>
+				<br/>
+				<input name="Descuento5" type="radio" id="prom" value="Descuento5" />
+					<label>Descuento 5%</label>
+				<br/>
+        </fieldset>
+    </form>
+</body>
+</html>
