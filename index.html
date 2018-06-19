@@ -1,56 +1,66 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Tarea formularios</title>
-    <meta charset="UTF-8">
-</head>
-<body>
-    <h2>Información sobre el producto </h2>
-    <form>
-        <fieldset>
-            <legend>Datos básicos</legend>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" value="" size="47"/>
-            <br/>
-            <br/>
-            <label for="description">Descipción</label>
-            <br/>
-            <textarea id="description" name="descipcion" cols="55" rows="6"></textarea>
-            <br/>
-            <br/>
-            <label for="foto">Foto</label>
-            <input type="file" id="foto" name="foto" value="texto"/>
-            <br/>
-            <br/>
-            <input name="contadorVisitas" id="contador" type="checkbox" value="contadorVisitas"/>
-            <label for="contador">Añadir contador de visitas</label>
-        </fieldset>
-        <fieldset>
-        	<legend>Datos económicos</legend>
-        	<label for="Precio">Precio</label>
-            <input type="text" id="Precio" name="Precio" value="" size="10"/>
-            <label>&#8364;</label> 
-            <label for="imp">Impuestos</label>
-			<select id="imp" name="impuesto">
-  				<option value="4" selected="selected">4%</option>
-  				<option value="7">7%</option>
- 				<option value="16">16%</option>
- 				<option value="25">25%</option>
- 			</select>
- 			<br/>
- 			<br/>
- 			<label for="prom">Promoción</label>
- 				<br/>
- 				<input name="ninguno" type="radio" id="prom" value="ninguno"/>
-					<label>Ninguno</label>
-				<br/>
-				<input name="transpGratuito" type="radio" id="prom" value="transporteGratuito" /> 
-					<label>Transporte Gratuito</label>
-				<br/>
-				<input name="Descuento5" type="radio" id="prom" value="Descuento5" />
-					<label>Descuento 5%</label>
-				<br/>
-        </fieldset>
-    </form>
-</body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica Diseño web</title>
+    </head>
+    <body>
+        <p>Analisis de ventas anuales</p>
+        <table border="">
+            <!--Encabezado -->
+            <tr>
+                <th rowspan="2">Año</th>
+                <th colspan="4">Expansión de ventas</th>
+            </tr>
+            <tr>
+                <th>Producto A</th>
+                <th>Procucto B</th>
+                <th>Producto C</th>
+                <th>Producto D</th>
+            </tr>
+            <!--Fila N3 -->
+            <tr>
+                <th>N-3</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <!--fila N2 -->
+            <tr>
+                <th>N-2</th>
+                <td>3</td>
+                <td>5</td>
+                <td>8</td>
+                <td>4</td>
+            </tr>
+            <!--fila N1 -->
+            <tr>
+                <th>N-1</th>
+                <td>4</td>
+                <td>4</td>
+                <td>7</td>
+                <td>3</td>
+            </tr>
+            <!--fila N -->
+            <tr>
+                <th>N</th>
+                <td>5</td>
+                <td>7</td>
+                <td>6</td>
+                <td>2</td>
+            </tr>
+            <!--footer -->
+            <tr>
+                <th rowspan="2">Año</th>
+                <th>Producto A</th>
+                <th>Procucto B</th>
+                <th>Producto C</th>
+                <th>Producto D</th>   
+            </tr>
+            <tr>
+                <th colspan="4">Expansión de ventas</th> 
+            </tr>
+        </table>
+    </body>    
 </html>
